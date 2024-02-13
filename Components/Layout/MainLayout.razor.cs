@@ -10,19 +10,20 @@ namespace MauiMudBlazor.Components.Layout
         private bool _isDarkMode;
         private MudThemeProvider? _mudThemeProvider;
 
+        // Customize theme colors if you want rather than defaults.
         // https://mudblazor.com/features/colors#material-colors-list-of-material-colors
         MudTheme _theme = new MudTheme()
         {
-            Palette = new Palette()
-            {
-                Primary = MudBlazor.Colors.Yellow.Darken3,
-                Secondary = MudBlazor.Colors.Yellow.Accent4,
-                AppbarBackground = MudBlazor.Colors.Yellow.Darken4,
-            },
-            PaletteDark = new PaletteDark()
-            {
-                Primary = MudBlazor.Colors.Yellow.Darken4,
-            },
+            //Palette = new Palette()
+            //{
+            //    Primary = MudBlazor.Colors.Yellow.Darken3,
+            //    Secondary = MudBlazor.Colors.Yellow.Accent4,
+            //    AppbarBackground = MudBlazor.Colors.Yellow.Darken4,
+            //},
+            //PaletteDark = new PaletteDark()
+            //{
+            //    Primary = MudBlazor.Colors.Yellow.Darken4,
+            //},
 
             //LayoutProperties = new LayoutProperties()
             //{
