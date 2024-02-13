@@ -1,1 +1,1 @@
-#.NET MAUI MudBlazor Hybrid starter project template
+# .NET MAUI MudBlazor Hybrid starter project template
