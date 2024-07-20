@@ -11,10 +11,13 @@ namespace MauiMudBlazor.Components.Layout
         private MudThemeProvider? _mudThemeProvider;
 
         // Customize theme colors if you want rather than defaults.
-        // https://mudblazor.com/features/colors#material-colors-list-of-material-colors
+        // https://mudblazor.com/customization/overview#custom-themes        
+
         MudTheme _theme = new MudTheme()
         {
-            //Palette = new Palette()
+            // Colors : https://mudblazor.com/features/colors#material-colors-list-of-material-colors
+
+            //PaletteLight = new PaletteLight()
             //{
             //    Primary = MudBlazor.Colors.Yellow.Darken3,
             //    Secondary = MudBlazor.Colors.Yellow.Accent4,
@@ -39,8 +42,18 @@ namespace MauiMudBlazor.Components.Layout
             _drawerOpen = !_drawerOpen;
         }
 
+        //protected override async Task OnAfterRenderAsync(bool firstRender)
+        //{
+        //    if (firstRender)
+        //    {
+        //        _isDarkMode = await _mudThemeProvider.GetSystemPreference();
+        //        //StateHasChanged();
+        //    }
+        //}
+
         protected override async Task OnInitializedAsync()
         {
+            
             // check theme status
             if (!string.IsNullOrWhiteSpace(SecureStorage.Default.GetAsync(SecureStorageKey.IsDarkMode).ToString()))
             {
