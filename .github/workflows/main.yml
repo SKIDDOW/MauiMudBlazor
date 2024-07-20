@@ -1,0 +1,41 @@
+name: Create Visual Studio Project Template
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  create-template:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'  # Specify your .NET version
+
+      - name: Install necessary tools
+        run: |
+          sudo apt-get install -y zip
+
+      - name: Build the project
+        run: dotnet build
+
+      - name: Pack the template
+        run: |
+          mkdir -p output
+          dotnet new -i .
+          dotnet new MauiMudBlazor -o output
+          cd output
+          zip -r ../${GITHUB_REPOSITORY##*/}-template.zip .
+
+      - name: Upload the template artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: project-template
+          path: ./${GITHUB_REPOSITORY##*/}-template.zip
