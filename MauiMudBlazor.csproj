@@ -65,4 +65,8 @@
 		<PackageReference Include="MudBlazor" Version="8.6.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Include=".github\workflows\build-vsix.yml" />
+	</ItemGroup>
+
 </Project>
