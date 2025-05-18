@@ -23,7 +23,7 @@ jobs:
       run: nuget restore MauiMudBlazor.csproj
 
     - name: 🛠️ Build VSIX
-      run: msbuild MauiMudBlazor/MauiMudBlazor.csproj /p:Configuration=Release
+      run: msbuild MauiMudBlazor.csproj /p:Configuration=Release
 
     - name: 🚀 Publish to GitHub Releases
       uses: softprops/action-gh-release@v1
