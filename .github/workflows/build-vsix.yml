@@ -20,7 +20,7 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: 📦 Restore NuGet packages
-      run: nuget restore MauiMudBlazor/MauiMudBlazor.csproj
+      run: nuget restore MauiMudBlazor.csproj
 
     - name: 🛠️ Build VSIX
       run: msbuild MauiMudBlazor/MauiMudBlazor.csproj /p:Configuration=Release
