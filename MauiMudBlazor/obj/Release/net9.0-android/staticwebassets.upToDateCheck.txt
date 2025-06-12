@@ -1,3 +1,0 @@
-wwwroot\favicon.png
-wwwroot\index.html
-F:\C# Projects\GitHub C# Repos\MauiMudBlazor\wwwroot\index.html
