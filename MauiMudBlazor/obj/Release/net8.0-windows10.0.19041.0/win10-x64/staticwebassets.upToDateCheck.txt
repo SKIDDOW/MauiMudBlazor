@@ -1,0 +1,2 @@
+wwwroot\favicon.png
+wwwroot\index.html

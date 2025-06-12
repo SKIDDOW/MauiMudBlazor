@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.8.34525.116
+VisualStudioVersion = 17.14.36203.30 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiMudBlazor", "MauiMudBlazor.csproj", "{36222DD4-1715-4B61-A854-8DB8581376CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMudBlazor", "MauiMudBlazor\MauiMudBlazor.csproj", "{C5D58709-6EBC-EA3E-407E-93CF2ED20CFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{36222DD4-1715-4B61-A854-8DB8581376CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36222DD4-1715-4B61-A854-8DB8581376CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36222DD4-1715-4B61-A854-8DB8581376CC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{36222DD4-1715-4B61-A854-8DB8581376CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36222DD4-1715-4B61-A854-8DB8581376CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36222DD4-1715-4B61-A854-8DB8581376CC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C5D58709-6EBC-EA3E-407E-93CF2ED20CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D58709-6EBC-EA3E-407E-93CF2ED20CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D58709-6EBC-EA3E-407E-93CF2ED20CFC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C5D58709-6EBC-EA3E-407E-93CF2ED20CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D58709-6EBC-EA3E-407E-93CF2ED20CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D58709-6EBC-EA3E-407E-93CF2ED20CFC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {182089D8-6973-4361-A99D-605D0B7E5386}
+		SolutionGuid = {F2108A1C-CB89-43F3-A2D6-95742A4AD84E}
 	EndGlobalSection
 EndGlobal
