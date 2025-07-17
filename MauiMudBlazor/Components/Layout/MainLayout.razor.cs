@@ -42,60 +42,29 @@ namespace MauiMudBlazor.Components.Layout
             _drawerOpen = !_drawerOpen;
         }
 
-        //protected override async Task OnAfterRenderAsync(bool firstRender)
-        //{
-        //    if (firstRender)
-        //    {
-        //        _isDarkMode = await _mudThemeProvider.GetSystemPreference();
-        //        //StateHasChanged();
-        //    }
-        //}
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                _isDarkMode = await _mudThemeProvider.GetSystemDarkModeAsync();
+                StateHasChanged();
+            }
+        }
 
         protected override async Task OnInitializedAsync()
         {
             
-            // check theme status
-            if (!string.IsNullOrWhiteSpace(SecureStorage.Default.GetAsync(SecureStorageKey.IsDarkMode).ToString()))
-            {
-                string status = await SecureStorage.Default.GetAsync(SecureStorageKey.IsDarkMode);
-                if (status != null && status == "True")
-                {
-                    _isDarkMode = true;
-                }
-                else
-                {
-                    _isDarkMode = false;
-                }
-            }
-
-            StateHasChanged();
-
-            themeHelper.DarkModeChanged += HandleDarkModeChange;
         }
 
-        // Event handler for DarkModeChanged event
-        private async void HandleDarkModeChange(bool isDarkMode)
+        public string DarkLightModeButtonIcon => _isDarkMode switch
         {
-            _isDarkMode = isDarkMode;
+            true => Icons.Material.Rounded.LightMode,
+            false => Icons.Material.Outlined.DarkMode,
+        };
 
-            if (_isDarkMode)
-            {
-                _isDarkMode = false;
-                await InvokeAsync(StateHasChanged);
-            }
-            else if (!_isDarkMode)
-            {
-                _isDarkMode = true;
-                await InvokeAsync(StateHasChanged);
-            }
-            await SecureStorage.Default.SetAsync(SecureStorageKey.IsDarkMode, _isDarkMode.ToString());
-        }
-
-        // This event handler is called when the MudSwitch is toggled
-        private async Task ToggleDarkMode(bool value)
+        private async Task DarkModeToggle()
         {
-            _isDarkMode = value;
-            themeHelper.RaiseDarkModeChanged(value);
+            _isDarkMode = !_isDarkMode;
         }
     }
 }

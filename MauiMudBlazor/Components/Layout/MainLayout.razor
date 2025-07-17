@@ -1,6 +1,4 @@
-﻿@using MauiMudBlazor.Helpers
-@inherits LayoutComponentBase
-@inject EventHandleHelper themeHelper
+﻿@inherits LayoutComponentBase
 
 <MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode" Theme="_theme" />
 <MudPopoverProvider />
@@ -11,8 +9,7 @@
     <MudAppBar>
         <MudIconButton OnClick="DrawerToggle" Icon="@Icons.Material.Rounded.Notes" Color="Color.Inherit" Edge="Edge.Start" />
         <MudSpacer/>
-        <MudToggleIconButton ToggledChanged="@ToggleDarkMode" Icon="@Icons.Material.Filled.LightMode"
-                             ToggledIcon="@Icons.Material.Filled.DarkMode"></MudToggleIconButton>
+        <MudIconButton Icon="@DarkLightModeButtonIcon" OnClick="DarkModeToggle" Color="Color.Inherit" Edge="Edge.End" />
     </MudAppBar>
 
     <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
