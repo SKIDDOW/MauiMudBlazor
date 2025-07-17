@@ -6,3 +6,5 @@
 /MauiMudBlazor/obj
 /MauiMudBlazor/bin
 /MauiMudBlazor/src/.vs
+/.vs
+/MauiMudBlazor/MauiMudBlazor.csproj.user
