@@ -8,3 +8,6 @@
 /MauiMudBlazor/src/.vs
 /.vs
 /MauiMudBlazor/MauiMudBlazor.csproj.user
+/MauiMudBlazor.VSIX/obj
+/MauiMudBlazor.VSIX/bin/Debug
+/MauiMudBlazor.VSIX/.vs/MauiMudBlazor.VSIX
