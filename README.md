@@ -37,21 +37,6 @@ This template provides a solid starting point for building **mobile-first** or *
 
 - Visit the [Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=SKIDDOW.MauiMudBlazor)  
 
----
 
-## 🧱 Getting Started
-
-After creating your project:
-
-- Open `MainLayout.razor` and start customizing your layout
-- Add new pages or components inside the `Pages` or `Components` folders
-- The app runs on Android, iOS, macOS, Windows, and more with a single codebase
-
----
-
-## 📸 Screenshots
-
-![Desktop](https://raw.githubusercontent.com/SKIDDOW/MauiMudBlazor/refs/heads/main/Screenshots/desktop.png)
-![Mobile](https://raw.githubusercontent.com/SKIDDOW/MauiMudBlazor/refs/heads/main/Screenshots/mobile.png)
 
 
