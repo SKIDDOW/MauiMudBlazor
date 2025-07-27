@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="MauiMudBlazor.VSIX.192b0930-2fc7-468b-8dcb-a249d3f97bd2" Version="1.2.1" Language="en-US" Publisher="Skiddow" />
+        <DisplayName>MauiMudBlazor.VSIX</DisplayName>
+        <Description xml:space="preserve">.NET MAUI MudBlazor Hybrid starter project template</Description>
+        <MoreInfo>https://github.com/SKIDDOW/MauiMudBlazor/</MoreInfo>
+        <Icon>icon.png</Icon>
+        <PreviewImage>desktop.png</PreviewImage>
+        <Tags>C#, Blazor, Blazor Hybrid, iOS, Mac Catalyst,  Mobile, MAUI, Windows, macOS</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\MauiMudBlazor.zip" />
+    </Assets>
+</PackageManifest>
