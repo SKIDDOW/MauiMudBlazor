@@ -1,4 +1,4 @@
-﻿# 🚀 .NET MAUI MudBlazor Hybrid starter project template
+﻿# 🚀 .NET MAUI MudBlazor Hybrid Starter Project Template
 
 A modern and responsive Visual Studio **.NET MAUI Blazor** template powered by **MudBlazor** — optimized for building beautiful cross-platform apps with minimal effort.
 
@@ -33,13 +33,25 @@ This template provides a solid starting point for building **mobile-first** or *
 
 ---
 
-## 📦 Download & Install
+### 🔹 Install from Visual Studio Marketplace
 
-### 🔹 Option 1: Import Project Template (`.zip`)
+- Visit the [Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=SKIDDOW.MauiMudBlazor)  
 
-1. [Download latest release](https://github.com/SKIDDOW/MauiMudBlazor/releases)
-2. Copy the `.zip` file to your local templates directory:
+---
 
-   ```bash
-   %USERPROFILE%\Documents\Visual Studio <version>\Templates\ProjectTemplates
+## 🧱 Getting Started
+
+After creating your project:
+
+- Open `MainLayout.razor` and start customizing your layout
+- Add new pages or components inside the `Pages` or `Components` folders
+- The app runs on Android, iOS, macOS, Windows, and more with a single codebase
+
+---
+
+## 📸 Screenshots
+
+![Desktop](https://raw.githubusercontent.com/SKIDDOW/MauiMudBlazor/refs/heads/main/Screenshots/desktop.png)
+![Mobile](https://raw.githubusercontent.com/SKIDDOW/MauiMudBlazor/refs/heads/main/Screenshots/mobile.png)
+
 
