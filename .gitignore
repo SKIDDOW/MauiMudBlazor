@@ -9,5 +9,5 @@
 /.vs
 /MauiMudBlazor/MauiMudBlazor.csproj.user
 /MauiMudBlazor.VSIX/obj
-/MauiMudBlazor.VSIX/bin/Debug
-/MauiMudBlazor.VSIX/.vs/MauiMudBlazor.VSIX
+/MauiMudBlazor.VSIX/bin
+/MauiMudBlazor.VSIX/.vs
