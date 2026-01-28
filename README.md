@@ -2,6 +2,10 @@
 
 A modern and responsive Visual Studio **.NET MAUI Blazor** template powered by **MudBlazor** — optimized for building beautiful cross-platform apps with minimal effort.
 
+### 🔹 Install from Visual Studio Marketplace
+
+- Visit the [Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=Skiddow.MauiMudBlazor)  
+
 ![MAUI MudBlazor Banner](https://github.com/SKIDDOW/MauiMudBlazor/blob/main/Screenshots/desktop.png)
 
 ---
@@ -33,9 +37,7 @@ This template provides a solid starting point for building **mobile-first** or *
 
 ---
 
-### 🔹 Install from Visual Studio Marketplace
 
-- Visit the [Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=SKIDDOW.MauiMudBlazor)  
 
 
 
